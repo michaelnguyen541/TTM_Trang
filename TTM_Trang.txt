@@ -1,0 +1,17 @@
+﻿Bài toán của Trang
+- Có: tập 1493 văn bản và 1 số khía cạnh mà mình quan tâm.
+- Với mỗi khía cạnh, tìm n chủ đề ẩn (n = 6). Mỗi chủ đề ẩn được biểu diễn qua 1 danh sách các từ liên quan
+đến chủ đề ẩn đó, số từ của mỗi chủ đề ẩn có thể khác nhau.
+- Với mỗi chủ đề ẩn, mình kỳ vọng lấy ra m từ (m = 30). Nếu ở một chủ đề ẩn nhiều hơn hoặc bằng 30 từ thì 
+chỉ lấy đến 30 từ, còn nếu nhỏ hơn 30 từ thì lấy từ chủ đề ẩn khác sang, để đảm bảo sự bằng nhau trong dữ liệu
+của các hàng. Các từ lấy từ chủ đề ẩn ra sẽ được ghép với nhau thành một danh sách (list) gồm n * m từ 
+(6 * 30 = 180 từ).
+- Biểu diễn từng câu trong 1493 câu qua (n * m) từ ở trên
+  + Biểu diễn bằng binary: Với mỗi văn bản trong 1493 văn bản, biểu diễn nó thành một vector (n * m) chiều.
+    Chiều thứ i nhận giá trị 1/0 tương ứng với từ thứ i trong danh sách (n * m) từ có nằm trong văn bản đang
+    xét hay không. Như vậy, ta sẽ có ma trận có số hàng là số văn bản, số cột là (n * m).
+- Chia dữ liệu:
+  + Tập train: 1200 văn bản trong trường hợp học giám sát; 4 tập văn bản, mỗi tập 300 văn bản trong trường
+    hợp học bán giám sát.
+  + Tập test: 293 văn bản.
+- Sử dụng các phương pháp học kNN, SVM, Decision Trees, Random Forest.
